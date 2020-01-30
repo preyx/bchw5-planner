@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day Planner</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/css/uikit.min.css"
+    />
+    <style>
+      .red-bkg {
+        background-color: #ffced0;
+      }
+      .green-bkg {
+        background-color: #d0ffce;
+      }
+      .gray-bkg {
+        background-color: #cfd8dc;
+      }
+      input {
+        border: 0px !important;
+      }
+      .pad-8 {
+        padding: 8px;
+      }
+      .point {
+        cursor: pointer;
+        border-bottom: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="uk-container">
+      <h1 class="uk-heading-medium uk-text-center">Day Planner</h1>
+      <h2 class="uk-text-center">A simple app for planning your day!</h2>
+      <h4 class="uk-heading-divider uk-text-center">
+        Today is: <span id="today">Wednesday, January 29, 2020</span>
+      </h4>
+      <div class="uk-margin-bottom" id="timetable"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit-icons.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
